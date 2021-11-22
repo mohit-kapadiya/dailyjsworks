@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Variables</title>
+</head>
+<body>
+
+	<script>
+
+		// var 
+
+		// function scope
+		var name = 'mohit';
+		document.write(name +'<br>')
+
+		// allowed re-declaration
+
+		var name ='akshay'
+		document.write(name+'<br>')
+
+		// we can use var befor initialization
+
+		fatherName ='Dineshbhai'
+		var fatherName;
+		document.write(fatherName+'<br>')
+
+		// let 
+
+		// block scop
+
+		let id = 1;
+		id = 2
+
+		document.write(id +'<br>');
+
+			//	let id = 2;
+
+		// Identifier 'id' has already been declared
+
+		// give this error , re-declaration not allowed
+
+
+		mothername ='xyz';
+		//let mothername;
+
+		//Uncaught ReferenceError: Cannot access 'mothername' before initialization
+
+		// so let can not use befor initialization
+
+
+		// const 
+
+		// block scope , can not re-declare and re-assign 
+
+		const friends =['mohit' , 'tushar' , 'sahil'];
+		document.write(friends+'<br>');
+		friends.push('dharmik');
+		document.write(friends+'<br>');
+
+		let x = 3.42
+		let y = 123e5
+		document.write(y+'<br>')
+		document.write(x.toFixed(5))
+
+
+ 
+	</script>
+
+</body>
+</html>
