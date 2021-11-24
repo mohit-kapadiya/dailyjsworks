@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Numbers Methods</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+
+		// toString()
+
+		let number =  123
+		document.write(number.toString()+'<br>');
+
+
+		//The toExponential() Method
+		// toExponential() returns a string, with a number rounded and written using exponential notation.
+
+		let number2 =  1234.2
+
+		document.write(number2.toExponential()+'<br>');
+		
+
+		// toFixed()
+
+		document.write(number.toFixed(5)+'<br>');
+
+		// toPrecision
+
+		let number3 = 9.658
+
+		document.write(number3.toPrecision(3)+'<br>')
+
+		// valueOf()
+			// return a number as a number
+
+		document.write(number3.valueOf()+'<br>')
+
+		// Number() , parseInt() , parseFloat()
+
+			// convert string to a number
+
+		document.write(Number('2.3')+'<br>')
+
+		//Number() can also convert a date to a number.
+			// space are not allowed in number
+
+		document.write(Number(new Date('2021-12-24'))+'<br>')
+
+		// parseInt()
+
+			// convert string to a number return only int number
+			// space are allowed here but take only first value
+			document.write(parseInt('2 2')+'<br>')
+
+		// parseFloat()
+			// convert string to a number return float  number
+			// space are allowed here but take only first value
+			document.write(parseFloat('2.33')+'<br>')
+
+		// MAX_VALUE , MIN_VALUE ,  POSITIVE_INFINITY ,NEGATIVE_INFINITY , NaN
+
+		document.write(Number.MAX_VALUE+'<br>')
+		document.write(Number.MIN_VALUE+'<br>')
+		document.write(Number.POSITIVE_INFINITY+'<br>')
+		document.write(Number.NEGATIVE_INFINITY+'<br>')
+		document.write(Number.NaN+'<br>')
+
+
+
+	</script>
+
+</body>
+</html>

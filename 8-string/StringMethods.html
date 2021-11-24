@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>String Methods</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	// length
+
+	var name = 'mohit';
+	document.write('length of name'+ name.length +'<br>');
+
+	// slice(start , end)
+
+	var text = 'Hii ! I am mohit kapadiya from jetpur';
+	document.write(text.slice(6,16)+'<br>');
+
+	//If a parameter is negative, the position is counted from the end of the string.
+
+	var text1 = 'Hii ! I am mohit kapadiya from jetpur';
+
+	document.write(text1.slice(-10 ,-2)+'<br>')
+
+	//If you omit the second parameter, the method will slice out the rest of the string:
+
+    document.write(text1.slice(6)+'<br>')
+ 	document.write(text1.slice(-7)+'<br>')
+
+
+ 	// substring(first , last)
+
+ 		// similar to a slice but can not accept a negative parameter
+
+		var text2 = 'Hii ! I am mohit kapadiya from jetpur';
+
+		document.write(text2.substring(4,10)+'<br>')
+
+
+    // substr(first , length of expected string)
+
+
+    	document.write(text2.substr(11,6)+'<br>')
+
+  	 // replace(old string , new string)
+
+
+   		var  text3 = 'Hii Mohil'
+
+   		document.write(text3.replace('Mohil' ,'Mohit')+'<br>')
+
+
+   		// remove cash sensitive using of /i
+
+   		var text4 = 'Hii mohil'
+		document.write(text4.replace(/Mohil/i ,'Mohit')+'<br>')
+
+			// replace all methces using of /g
+
+		var text4 = 'Hii mohil mohil mohil mohil mohil'
+		document.write(text4.replace(/mohil/g ,'Mohit')+'<br>')
+
+
+  		// toUpperCase()
+
+  		var text5 = 'Hii ! I am mohit kapadiya from jetpur';
+  		document.write(text5.toUpperCase()+'<br>')
+
+ 		 // toLowerCase()
+
+		var text5 = 'Hii ! I am mohit kapadiya from jetpur';
+  		document.write(text5.toLowerCase()+'<br>')
+
+		// concat()
+
+		let firstName = "Mohit";
+		let lastName = "Kapadiya";
+		let fullName = firstName.concat(" ", lastName);
+		document.write(fullName+'<br>')
+
+		// trim()
+
+		let textName = "  Mohit     "
+		document.write(textName.trim()+'<br>')
+
+		// charAt()
+			let textCharAt = "Mohit"
+		document.write(textCharAt.charAt(4)+'<br>');
+
+		// charCodeAt()
+
+		// return unicode of character
+			document.write(textCharAt.charCodeAt(4)+'<br>');
+
+
+		// split() 
+
+
+			// convert string to array
+
+		var example = 'Hii ! I am mohit kapadiya from jetpur';
+		var splitData = example.split(" ");
+		const array = [];
+		for(var i =0; i<splitData.length ; i++){
+			array.push(splitData[i])
+		}
+		document.write(array);
+
+
+
+
+
+
+</script>
+</body>
+</html>
